@@ -101,7 +101,7 @@ body {
 
 .project-item {
     padding: 20px;
-    max-width: 25vw;
+    width: 25vw;
     min-width: 250px;
 }
 
@@ -154,7 +154,7 @@ body {
 
     .project-item {
         padding: 20px;
-        max-width: 60vw;
+        width: 70vw;
         min-width: 250px;
     }
 
