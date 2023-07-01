@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: rgb(15, 177, 0);
+}
+
+.link {
+    text-decoration: none !important;
+    color: var(--secondary-color) !important;
+}
+
+.link:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px !important;
+}
+
+.min-h-200 {
+    min-height: 200px;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.brd {
+    border: aliceblue 2px solid;
+    margin: 0px 5px 20px;
+}
+
+.textc {
+    border: aliceblue 2px solid;
+    margin: 5px;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.header,
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 20px;
+    border: 2px double var(--primary-color);
+}
+
+.nav-link:hover {
+    border: 2px double aliceblue;
+    color: aliceblue;
+}
+
+.default-bnt {
+    text-decoration: none;
+}
+
+.main {
+    background-color: #000000df;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-bar-item {
+    margin: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-text {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+
+}
+
+.about-me-image,
+.lunux-me-image {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-item {
+    padding: 20px;
+    max-width: 25vw;
+    min-width: 250px;
+}
+
+.project-item-text {
+    text-align: justify;
+    border: white 2px solid;
+    padding: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    image-rendering: optimizeQuality;
+    width: fit-content;
+}
+
+.project-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary-color);
+}
+
+.project-btn:hover {
+    background-color: var(--primary-color);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+.footer {
+    margin-top: 10vh;
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 900px) {
+
+    .projects,
+    .about-me {
+        display: grid;
+        justify-content: center;
+    }
+
+    .float-rigth {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-item {
+        padding: 20px;
+        max-width: 60vw;
+        min-width: 250px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+
+    .show {
+        display: none;
+    }
+
+}
