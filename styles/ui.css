@@ -1,0 +1,209 @@
+:root {
+    --ancient-color: #ffe500;
+    --main-bg: black;
+    --main-text-light: aliceblue;
+    --main-text-dark: black;
+    --main-hover: blue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--main-bg);
+    color: var(--main-text-light);
+    font-family: monospace;
+    background-image: url("../wallpapers/wp1.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+}
+
+.start-menu {
+    background: var(--ancient-color);
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+}
+
+.taskbar-btn {
+    height: 35px;
+    width: 35px;
+    background: var(--main-bg);
+    color: var(--main-text-light);
+    font-weight: bold;
+    border: solid 2px var(--ancient-color);
+}
+
+.taskbar-btn:hover {
+    background: var(--ancient-color);
+    color: var(--main-text-dark);
+    border: solid 2px var(--main-bg);
+}
+
+.main_apps_menu {
+    width: 54px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    color: var(--main-text-light);
+    background: var(--main-bg);
+    border: solid 2px var(--ancient-color);
+    font-weight: bolder;
+}
+
+.main_apps_menu:hover {
+    background: var(--ancient-color);
+    border: solid 2px var(--main-bg);
+    color: var(--main-text-dark);
+}
+
+.main-ctn {
+    display: flex;
+}
+
+.boxed-window {
+    border: solid 5px var(--ancient-color);
+    height: 85vh;
+    padding: 5px;
+    background: #000000db;
+}
+
+main {
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    margin: 15px;
+    border: solid 2px var(--ancient-color);
+    box-shadow: 10px 10px var(--ancient-color);
+}
+
+.sidebar {
+    min-width: 380px;
+    background: #000000b8;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-right: solid 5px #0000003d;
+}
+
+.start-app-name {
+    text-transform: capitalize;
+}
+
+.start-icons {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    background: none;
+    border: solid 1px #0000;
+    color: var(--main-text-light);
+    font-weight: normal;
+    font-size: 10px !important;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.start-icons-ico {
+    width: 50px;
+    height: 50px;
+}
+
+.start-icons:hover {
+    border-radius: 5px;
+    background: linear-gradient(
+        230deg,
+        rgba(0, 0, 0, 0.6544818611038166) 0%,
+        rgba(157, 157, 157, 0.27) 50%,
+        rgba(18, 11, 11, 0.5060224773503151) 100%
+    );
+    border: solid 1px #000;
+}
+
+.clock-widget {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.btn-ctn {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 120px 120px 120px;
+}
+
+.btn-some {
+    width: 100%;
+    max-width: 260px;
+    height: 30px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 30px;
+    margin-top: 10px;
+    color: var(--main-text-dark);
+    border: none;
+    background-image: url("../assets/1.png");
+    background: var(--ancient-color);
+    text-transform: capitalize;
+}
+
+.btn-some:hover {
+    background-image: url("../assets/3.png");
+    margin-left: 10px;
+}
+
+.cyber {
+    max-width: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cyber img {
+    max-width: 60px;
+    margin-top: 50px;
+    border-radius: 100%;
+}
+
+.content {
+    overflow: hidden !important;
+    font-size: 15px;
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-height: 600px) {
+    main {
+        height: 90vh;
+        font-size: 10px !important;
+        box-shadow: 4px 4px var(--ancient-color);
+        margin: 10px;
+    }
+
+    .main_apps_menu {
+        height: 30px;
+    }
+
+    .btn-some {
+        font-size: 10px;
+        max-width: 200px;
+        height: 15px;
+    }
+
+    .boxed-window {
+        height: 78vh;
+    }
+
+    .search-btn {
+        width: unset !important;
+    }
+
+    .search-input {
+        width: unset !important;
+    }
+}

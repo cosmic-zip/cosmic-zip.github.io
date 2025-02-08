@@ -1,0 +1,45 @@
+.editor-textarea {
+    font-size: 15px;
+}
+
+.ql-toolbar.ql-snow {
+    background: var(--ancient-color) !important;
+    border: solid 2px var(--ancient-color);
+}
+
+.ql-snow {
+    border: none !important;
+    font-size: 20px;
+    background: #090028;
+}
+
+.ql-tooltip {
+    border: none;
+    color: var(--main-bg);
+    padding: 5px 12px;
+    white-space: nowrap;
+    background: var(--ancient-color);
+}
+
+.ql-snow a {
+    color: var(--main-bg);
+}
+
+.ql-code-block-container .ql-ui {
+    background: var(--ancient-color);
+    border: none;
+    font-weight: bolder;
+    width: 120px;
+}
+
+select.ql-ui {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* Removes default styling in Chrome, Safari, Opera */
+    -moz-appearance: none; /* Removes default styling in Firefox */
+}
+
+.ql-editor {
+    height: 80vh;
+    font-size: 20px;
+    overflow-y: scroll;
+}
